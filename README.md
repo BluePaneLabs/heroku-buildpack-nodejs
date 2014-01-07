@@ -1,7 +1,9 @@
 Heroku Buildpack for Node.js
 ============================
 
-This is the official [Heroku buildpack](http://devcenter.heroku.com/articles/buildpacks) for Node.js apps. If you fork this repository, please **update this README** to explain what your fork does and why it's special.
+This is a fork of the official [Heroku buildpack](http://devcenter.heroku.com/articles/buildpacks) for Node.js apps. 
+
+This fork add the Bower and Grunt to the official buildpack, as well as implementing an `npm rebuild` if a 'skip_cache' parameter is present in package.json. This allows one to fix modules that might've been built for a previous version of node.js prior to an upgrade.
 
 
 How it Works
